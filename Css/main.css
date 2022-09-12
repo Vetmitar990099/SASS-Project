@@ -59,7 +59,7 @@ body {
 
 #mainimage {
   display: flex;
-  background-image: url("/Images/Nuka-Cola_Logo.svg.png");
+  background-image: url("../Images/Nuka-Cola_Logo.svg.png");
   background-size: 100vw 250px;
   padding: 0px;
   margin: 0px;
