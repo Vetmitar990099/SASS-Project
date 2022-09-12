@@ -1,0 +1,67 @@
+@use "variable.scss" as var;
+@mixin underline {
+    border-bottom: 2px solid var.$primarycolor;
+    width: 200px;
+    height: 20px;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+}
+#leftcol {
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 30vw;
+}
+#maindiv {
+    display: flex;
+    height: 100vh;
+    width: 100vw
+}
+.listheader {
+    @include underline();
+    font-weight: var.$mainheader;
+    padding-bottom: 10px;
+}
+.experienceheader {
+    font-weight: var.$secheader;
+}
+.small {
+    font-size: var.$smallfont;
+}
+.connected1 {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+#leftcol {
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 30vw;
+}
+#rightcol {
+    background-color: var.$mainbgcolor;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 70vw;
+    @extend #leftcol
+}
+#profile {
+    width: 200px;
+    height: 200px;
+    padding-left: 2vw;
+}
+#mainimage {
+    display: flex;
+    background-image: url("/Images/Nuka-Cola_Logo.svg.png");
+    background-size: 100vw 20vh;
+    padding: 0px;
+    margin: 0px;
+}
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vw;
+}
